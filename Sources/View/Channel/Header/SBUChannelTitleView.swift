@@ -250,6 +250,6 @@ public class SBUChannelTitleView: UIView {
     public override var intrinsicContentSize: CGSize {
         // NOTE: this is under assumption that this view is used in
         // navigation and / or stack view to shrink but keep max width
-        return CGSize(width: 100000, height: self.frame.height)
+        return CGSize(width: 100000, height: 36)
     }
 }

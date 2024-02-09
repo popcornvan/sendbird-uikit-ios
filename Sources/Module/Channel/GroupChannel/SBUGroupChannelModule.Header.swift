@@ -61,5 +61,12 @@ extension SBUGroupChannelModule {
                 self.delegate?.baseChannelModule(self, didTapRightItem: rightBarButton)
             }
         }
+        
+        open override func onTapTitleView() {
+            super.onTapTitleView()
+            if let titleView = self.titleView {
+                self.delegate?.baseChannelModule(self, didTapTitleView: titleView)
+            }
+        }
     }
 }

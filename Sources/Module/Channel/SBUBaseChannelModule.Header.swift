@@ -86,6 +86,8 @@ extension SBUBaseChannelModule {
         // MARK: - UI properties (Private)
         lazy var defaultTitleView: SBUChannelTitleView = {
             var titleView = SBUChannelTitleView()
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onTapTitleView))
+            titleView.addGestureRecognizer(tapGesture)
             return titleView
         }()
         
@@ -184,5 +186,6 @@ extension SBUBaseChannelModule {
         /// The action of `rightBarButton`. It calls `baseChannelModule(_:didTapRightItem:)` when it's tapped
         open func onTapRightBarButton() { }
         
+        open func onTapTitleView() { }
     }
 }

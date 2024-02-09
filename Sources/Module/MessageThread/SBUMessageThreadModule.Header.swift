@@ -88,7 +88,7 @@ extension SBUMessageThreadModule {
         }
         
         // MARK: - Actions
-        open func onTapTitleView() {
+        open override func onTapTitleView() {
             if let titleView = self.titleView {
                 self.delegate?.baseChannelModule(self, didTapTitleView: titleView)
             }
