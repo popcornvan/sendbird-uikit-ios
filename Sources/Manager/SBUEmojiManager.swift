@@ -100,7 +100,7 @@ public class SBUEmojiManager {
         guard let groupChannel = channel as? GroupChannel else { return false }
         
         return SBUAvailable.isSupportReactions()
-        && !groupChannel.isSuper
+//        && !groupChannel.isSuper
         && !groupChannel.isBroadcast
     }
     
