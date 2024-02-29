@@ -128,7 +128,7 @@ extension ChannelCustomManager {
     }
     
     func headerComponentCustom() {
-        SBUModuleSet.GroupChannelModule.HeaderComponent = CustomChannelModule.Header.self
+//        SBUModuleSet.GroupChannelModule.HeaderComponent = CustomChannelModule.Header.self
         
         ChannelManager.getSampleChannel { channel in
             // If you inherit `SBUChannelViewController`, you can customize it by overriding some functions.

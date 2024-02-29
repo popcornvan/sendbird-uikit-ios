@@ -819,6 +819,10 @@ open class SBUGroupChannelViewController: SBUBaseChannelViewController, SBUGroup
         self.showChannelSettings()
     }
     
+    open override func baseChannelModule(_ headerComponent: SBUBaseChannelModule.Header, didTapTitleView titleView: UIView?) {
+        
+    }
+    
     // MARK: - SBUGroupChannelModuleListDelegate
     open func groupChannelModule(
         _ listComponent: SBUGroupChannelModule.List,

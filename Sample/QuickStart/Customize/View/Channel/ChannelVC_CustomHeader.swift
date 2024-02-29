@@ -69,6 +69,10 @@ class ChannelVC_CustomHeader: SBUGroupChannelViewController {
         nav.modalPresentationStyle = .fullScreen
         self.present(nav, animated: true, completion: nil)
     }
+    
+    override func baseChannelModule(_ headerComponent: SBUBaseChannelModule.Header, didTapTitleView titleView: UIView?) {
+        
+    }
 }
 
 extension ChannelVC_CustomHeader: CustomChannelModuleHeaderDelegate {
