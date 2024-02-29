@@ -72,6 +72,7 @@ public enum SBUIconSetType: String, Hashable {
     case iconStop
     case iconGood // 3.15.0
     case iconBad // 3.15.0
+    case userBorder
     
     // MARK: - Metric
     
@@ -212,6 +213,7 @@ public enum SBUIconSetType: String, Hashable {
         case .iconStop: SBUIconSet.iconStop = SBUIconSetType.iconStop.load()
         case .iconBad: SBUIconSet.iconBad = SBUIconSetType.iconBad.load()
         case .iconGood: SBUIconSet.iconGood = SBUIconSetType.iconGood.load()
+        case .userBorder: SBUIconSet.userBorder = SBUIconSetType.userBorder.load()
         }
         
         SBUIconSetType.customizedIcons.remove(self)
@@ -285,6 +287,7 @@ public enum SBUIconSetType: String, Hashable {
         case .iconStop: return SBUIconSet.iconStop
         case .iconGood: return SBUIconSet.iconGood
         case .iconBad: return SBUIconSet.iconBad
+        case .userBorder: return SBUIconSet.userBorder
         }
     }
 }

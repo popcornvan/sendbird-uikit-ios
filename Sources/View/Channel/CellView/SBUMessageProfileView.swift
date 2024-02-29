@@ -86,6 +86,19 @@ open class SBUMessageProfileView: SBUView {
         imageView.layer.borderColor = UIColor.clear.cgColor
         imageView.layer.borderWidth = 1
         
+        let userBorder = UIImageView(image: SBUIconSetType.userBorder.image(
+            with: .black,
+            to: CGSize(value: 28)
+        ))
+        userBorder.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.addSubview(userBorder)
+        
+        NSLayoutConstraint.activate([
+            userBorder.centerXAnchor.constraint(equalTo: imageView.centerXAnchor),
+            userBorder.centerYAnchor.constraint(equalTo: imageView.centerYAnchor)
+        ])
+        
         imageView.contentMode = urlString.count > 0 ? .scaleAspectFill : .center
         
         self.imageDownloadTask = self.imageView.loadImage(

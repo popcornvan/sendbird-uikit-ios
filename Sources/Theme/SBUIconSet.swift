@@ -214,6 +214,10 @@ public class SBUIconSet {
         didSet { SBUIconSetType.iconBad.markCustomized() }
     }
     
+    public static var userBorder: UIImage = SBUIconSetType.userBorder.load() {
+        didSet { SBUIconSetType.userBorder.markCustomized() }
+    }
+    
     /// Restore all customized icons to SDK's default icons.
     ///
     /// - Since: 2.1.0
